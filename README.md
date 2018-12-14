@@ -1,6 +1,6 @@
-# The Node Beginner Book
+# textific.app
 
-"Notes" - a playground React/Redux app.
+An offline-capable React/Redux note keeper app.
 
 
 ## Project architecture
@@ -23,18 +23,10 @@ In order to provide a working application to the end user, three runtime compone
 
 #### Full setup
 
-With SSR, with Mock API, client-side app served from dedicated server process.
+With SSR & API server which also serves all client app assets.
 
-    npm install --no-save
-    npm run build:dev:*
-    npm run start:dev:mock-api-server # in one terminal session
-    npm run start:dev:ssr-server      # in another terminal session
+    npm run start:dev:mongodb         # in one terminal session
+    npm install --no-save             # in another terminal session
+    npm run build:dev:all
+    npm run start:dev:server
 
-
-#### Client-only
-
-Without SSR, with Mock API, client-side app served from Webpack development server.
-
-    npm install --no-save
-    npm run start:dev:mock-api-server           # in one terminal session
-    npm run start:dev:client-webpack-dev-server # in another terminal session
