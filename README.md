@@ -1,6 +1,6 @@
 # textific.app
 
-An offline-capable React/Redux note keeper app.
+An offline-capable note keeper app built with React/Redux & Node.js.
 
 
 ## Project architecture
